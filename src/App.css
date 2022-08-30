@@ -1,0 +1,111 @@
+.header {
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+  align-items: center;
+  justify-content: space-between;
+  height: 110px;
+  width: 99%;
+  box-shadow: 0px 15px 10px -15px #111;
+}
+.header-second {
+  display: flex;
+  margin-right: 50px;
+  align-items: center;
+}
+.header-logo {
+  padding-left: 60px;
+  font-size: 30px;
+}
+
+.header-gameselect {
+  margin-right: 70px;
+}
+.header-select-button {
+  background-color: white;
+  border: 2px solid green;
+  width: 160px;
+  height: 40px;
+  border-radius: 20px;
+}
+.header-select-button:hover {
+  background-color: rgba(212, 212, 212, 0.753);
+}
+.header-gameselect > :first-child {
+  margin-right: 30px;
+}
+
+.header-aboutus-button {
+  border-radius: 9px;
+  background-color: green;
+  border: none;
+  color: white;
+  padding: 10px;
+}
+.header-aboutus-button:hover {
+  background-color: rgba(0, 128, 0, 0.836);
+}
+
+main {
+  max-width: 300px;
+  margin: 50px auto 0;
+}
+
+.board {
+  display: grid;
+  width: 296px;
+  height: 300px;
+  border: 2px solid black;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+.square {
+  width: 100px;
+  height: 100px;
+  border: 2px solid black;
+  box-sizing: border-box;
+}
+
+.multiboard {
+  display: flex;
+  width: 300px;
+  height: 300px;
+  flex-direction: column;
+
+  border: 2px solid black;
+  margin: 50 auto 0;
+}
+
+.board-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.multisquare {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  border: 2px solid black;
+  box-sizing: border-box;
+  font-size: 50px;
+  cursor: pointer;
+}
+
+.status {
+  margin-top: 15px;
+  margin-bottom: 10px;
+
+}
+
+.restart {
+  display: flex;
+  border-radius: 3px;
+  font-size: 18px;
+  width: 118px;
+  padding: 6px;
+  background-color: blue;
+  color: white;
+  cursor: pointer;
+}

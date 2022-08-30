@@ -1,9 +1,9 @@
-Bu proje SistemPlus hiring test için hazırlanmıştır.
+Bu proje Fimple hiring test için hazırlanmıştır.
 Verilen kod bloklarını sırasıyla çalıştırarak uygulamayı başlatabilirsiniz.
 
-1-git clone https://github.com/Madanoglus/newsApp.git \
-2-cd newsApp\
-3-npm install react-scripts --save\
+1-git clone https://github.com/Madanoglus/xoxApp.git \
+2-cd xoxApp\
+3-npm install or npm install react-scripts --save\
 4-npm run start
 
 # Getting Started with Create React App
