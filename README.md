@@ -6,6 +6,13 @@ Verilen kod bloklarını sırasıyla çalıştırarak uygulamayı başlatabilirs
 3-npm install or npm install react-scripts --save\
 4-npm run start
 
+Eğer kurulumda npm hata veriyorsa yarn kullanabilirsiniz(Yarn install çalıştırmadan önce global olarak kurmayı unutmayın!).
+
+1-git clone https://github.com/Madanoglus/xoxApp.git \
+2-cd xoxApp\
+3-yarn install
+4-yarn start
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

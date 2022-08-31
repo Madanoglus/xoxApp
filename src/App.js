@@ -10,11 +10,43 @@ export default class App extends Component {
   render() {
     return (
       <div>
-        <Header />
         <Routes>
-          <Route path="/SinglePlayer" element={<SinglePlayer />} />
-          <Route path="/MultiPlayer" element={<MultiPlayer />} />
-          <Route path="/AboutUs" element={<AboutUs />}></Route>
+          <Route
+            path="/"
+            element={
+              <>
+                <Header />
+                <SinglePlayer />
+              </>
+            }
+          />
+          <Route
+            path="/SinglePlayer"
+            element={
+              <>
+                <Header />
+                <SinglePlayer />
+              </>
+            }
+          />
+          <Route
+            path="/MultiPlayer"
+            element={
+              <>
+                <Header />
+                <MultiPlayer />
+              </>
+            }
+          />
+          <Route
+            path="/AboutUs"
+            element={
+              <>
+                <Header />
+                <AboutUs />
+              </>
+            }
+          ></Route>
         </Routes>
       </div>
     );

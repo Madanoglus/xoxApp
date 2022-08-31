@@ -1,27 +1,11 @@
 import Board from "./Board";
-import Square from "./SingleSquare";
-
-
-
 
 function SinglePlayer() {
-  
   return (
     <div>
       <main>
-        <Board>
-          <Square />
-          <Square />
-          <Square />
-
-          <Square />
-          <Square />
-          <Square />
-
-          <Square />
-          <Square />
-          <Square />
-        </Board>
+        <h4>SİNGLEPLAYER GAME AREA</h4>
+        <Board />
       </main>
     </div>
   );

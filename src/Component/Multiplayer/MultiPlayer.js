@@ -38,7 +38,11 @@ function Board() {
 
     for (let i = 0; i < winningPaterns.length; i++) {
       const [a, b, c] = winningPaterns[i];
-      if (squares[a] && squares[a] === squares[b] && squares[a] === squares[c]) {
+      if (
+        squares[a] &&
+        squares[a] === squares[b] &&
+        squares[a] === squares[c]
+      ) {
         return squares[a];
       }
     }
@@ -52,6 +56,7 @@ function Board() {
 
   return (
     <div>
+      <h4>MULTİPLAYER GAME AREA</h4>
       <div className="multiboard">
         <div className="board-row">
           <Square value={squares[0]} onClick={() => handleClick(0)} />

@@ -21,7 +21,7 @@ export default class Header extends Component {
           </div>
           <div className="header-aboutus">
             <Link to="/AboutUs">
-              <button className="header-aboutus-button">ABOUT US</button>
+              <button className="header-aboutus-button">ABOUT APP</button>
             </Link>
           </div>
         </div>

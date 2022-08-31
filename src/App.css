@@ -46,34 +46,14 @@
   background-color: rgba(0, 128, 0, 0.836);
 }
 
-main {
-  max-width: 300px;
-  margin: 50px auto 0;
-}
-
-.board {
-  display: grid;
-  width: 296px;
-  height: 300px;
-  border: 2px solid black;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-}
-.square {
-  width: 100px;
-  height: 100px;
-  border: 2px solid black;
-  box-sizing: border-box;
-}
-
 .multiboard {
   display: flex;
-  width: 300px;
-  height: 300px;
+  width: 380px;
+  height: 380px;
   flex-direction: column;
-
-  border: 2px solid black;
   margin: 50 auto 0;
+  padding-top: 11px;
+  padding-right: 30px;
 }
 
 .board-row {
@@ -85,18 +65,19 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100px;
-  height: 100px;
-  border: 2px solid black;
+  width: 125px;
+  height: 125px;
+  border: 1px solid #eee;
+  background-color: #34495e;
   box-sizing: border-box;
-  font-size: 50px;
+  font-size: 80px;
   cursor: pointer;
+  color: white;
 }
 
 .status {
   margin-top: 15px;
   margin-bottom: 10px;
-
 }
 
 .restart {
@@ -105,7 +86,81 @@ main {
   font-size: 18px;
   width: 118px;
   padding: 6px;
-  background-color: blue;
+  background-color: green;
   color: white;
   cursor: pointer;
+}
+
+.board {
+  clear: both;
+  float: none;
+  overflow: hidden;
+}
+
+.board .col {
+  float: left;
+  width: 125px;
+  height: 125px;
+  border: 1px solid #eee;
+  border-left: none;
+  cursor: pointer;
+  color: #fff;
+  font-size: 90px;
+  background: #34495e;
+}
+.board .col:nth-child(3n + 1) {
+  border-left: 1px solid #aaa;
+}
+
+.btn {
+  cursor: pointer;
+  margin-top: 20px;
+  padding: 5px;
+  border: none;
+  background-color: green;
+  color: white;
+  border-radius: 3px;
+  font-size: 18px;
+}
+
+.board-wrapper {
+  margin-top: 50px;
+}
+
+h2 {
+  position: absolute;
+  display: flex;
+  margin-left: 127px;
+  margin-top: 15px;
+  font-size: 30px;
+}
+
+.col.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.aboutus-content {
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  margin: 50px auto 0;
+}
+
+.aboutus-content > h1 {
+  display: flex;
+  justify-content: center;
+  margin: 15px;
+  font-size: 20px;
+}
+
+h4 {
+  position: absolute;
+  margin: 200px 0px 0px 90px;
+  font-size: 20px;
+  color: green;
+}
+main > h4 {
+  margin-top: 250px;
 }
